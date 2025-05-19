@@ -3,24 +3,24 @@
 :root {
 
 
-    --fonte-primaria: "Kanit", sans-serif;
-    --fonte-secundaria: "Gidole", sans-serif;
-    --preto: rgb(0, 0, 0);
-    --azul-forte: #1b263bff;
-    --:azul:(0, 6, 114);
-    --azul-fraco: #778da9ff;
-    --platina: rgb(32, 35, 100);
-}   
-
-body{
-  background-color: var(--azul-fraco);
-  color: var(--blue);
-  font-family: var(var--fonte-primaria);
-  font-weight: 400;
-  font-style: normal;
+   --fonte-primaria: "Kanit", sans-serif;
+   --fonte-secundaria: "Gidole", sans-serif;
+   --preto: rgb(0, 0, 0);
+   --azul-forte: #1b263bff;
+   --: azul:(0, 6, 114);
+   --azul-fraco: #778da9ff;
+   --platina: rgb(32, 35, 100);
 }
 
-.conteudo-principal{
+body {
+   background-color: var(--azul-fraco);
+   color: var(--blue);
+   font-family: var(var--fonte-primaria);
+   font-weight: 400;
+   font-style: normal;
+}
+
+.conteudo-principal {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -30,26 +30,58 @@ body{
    margin: 0 auto;
 }
 
-.titulo-principal{
+.titulo-principal {
    text-align: left;
    width: 100%;
    font-size: 32px;
-} 
- 
- .titulo-principal span{
-    color: var(--azul-fraco);
-   
+}
+
+.titulo-principal span {
+   color: var(--azul-fraco);
+
+}
+
+.botao {
+   font-family: ;
+   font-weight: 400%;
+   font-style: normal;
+   background-color: var() color:;
+   display: flex;
+   justify-content: center;
+   padding: 1em;
+   font-size: 18px;
+   aling-items: center;
+   width: 100% border-bottom: 4px border-left: 4px border-right: 4px border-top: none;
+
+}
+
+.botoes {
+   display: block;
+}
+
+.botoes:first-child {
+   border-radius: 40px 40px 0 0;
+}
+
+.botao:last-child {
+   border-radius: 0 0 40px 40px;
+}
+
+@media screen and (min-widht: 768px) {
+   .botoes {
+      display: flex;
    }
-  
- .botao{
-    font-family: ;
-    font-weight: 400%;
-    font-style: normal;
-    background-color: var()
-    color: ;
-    display:flex;
-    justify-content: center;
-    padding:1em;
-    font-size:18px;
-    aling-
-    
+
+   .botao:first-child {
+      border-radius: 40px 0 0 0;
+   }
+
+   .botao:last-child {
+      border-radius: 0 40px 0 0;
+   }
+}
+
+.ativo {
+   background-color: blue;
+   border-bottom: 4px;
+}
